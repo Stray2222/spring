@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+</head>
+<body>
+<table style="font-family: Arial, sans-serif; border-collapse: collapse; width: 100%;">
+  <tr>
+    <td><h1> Model </h1></td>
+    <td><h1> Series </h1></td>
+    <td><h1> Year </h1></td>
+  </tr>
+  <th:block th:each="msg : ${messages}">
+    <tr style="border: 2px solid #dddddd; text-align: left; padding: 8px;">
+      <td th:text="${msg.model}"></td>
+      <td th:text="${msg.series}"></td>
+      <td th:text="${msg.year}"></td>
+    </tr>
+  </th:block>
+</table>
+
+</body>
+</html>
